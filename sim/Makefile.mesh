@@ -11,7 +11,7 @@ SV = $(COMPONENTS_DIR)/packet_pkg.sv \
      $(TOP_DIR)/$(TOP).sv \
      $(COMPONENTS_DIR)/ip_block.sv \
      $(COMPONENTS_DIR)/modulator.sv \
-     $(COMPONENTS_DIR)/waveguide.sv \
+     $(MESH_COMPONENTS_DIR)/mesh_waveguide.sv \
      $(COMPONENTS_DIR)/photodetector.sv \
      $(ARBITERS_DIR)/round_robin_arbiter.sv \
      $(ARBITERS_DIR)/masked_round_robin_arbiter.sv \
@@ -34,7 +34,7 @@ build:
 	make -C obj_dir -f V$(TOP).mk V$(TOP)
 
 run: build
-	./obj_dir/V$(TOP)
+	./obj_dir/V$(TOP) > mesh_debug.txt
 
 clean:
 	rm -rf obj_dir *.vcd $(TOP) results.csv latencies.csv verilator_output.txt
