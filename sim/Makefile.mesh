@@ -15,7 +15,7 @@ SV = $(COMPONENTS_DIR)/packet_pkg.sv \
      $(COMPONENTS_DIR)/photodetector.sv \
      $(ARBITERS_DIR)/round_robin_arbiter.sv \
      $(ARBITERS_DIR)/masked_round_robin_arbiter.sv \
-     $(ARBITERS_DIR)/fixed_priority_arbiter.sv \
+     $(ARBITERS_DIR)/mesh_fixed_priority_arbiter.sv \
      $(MESH_COMPONENTS_DIR)/mesh_router.sv
 
 INCLUDE_DIRS = -I$(SRC_DIR) -I$(TOP_DIR) -I$(COMPONENTS_DIR) -I$(MESH_COMPONENTS_DIR)
@@ -35,6 +35,8 @@ build:
 
 run: build
 	./obj_dir/V$(TOP) > mesh_debug.txt
+	@echo "✅ Simulation complete. Now plotting..."
+	python3 plot_signal_states.py
 
 clean:
-	rm -rf obj_dir *.vcd $(TOP) results.csv latencies.csv verilator_output.txt
+	rm -rf obj_dir *.vcd $(TOP) results.csv latencies.csv verilator_output.txt mesh_debug.txt signals.csv router_plots
