@@ -27,6 +27,7 @@ VM_CLASSES_FAST += \
 	Vmesh_onoc___024root__DepSet_h123f0098__0 \
 	Vmesh_onoc___024root__DepSet_h1ec660d4__0 \
 	Vmesh_onoc___024root__DepSet_h1ec660d4__1 \
+	Vmesh_onoc___024root__DepSet_h1ec660d4__2 \
 
 # Generated module classes, non-fast-path, compile with low/medium optimization
 VM_CLASSES_SLOW += \

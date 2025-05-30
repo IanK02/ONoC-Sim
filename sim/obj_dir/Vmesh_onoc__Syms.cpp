@@ -19,7 +19,7 @@ Vmesh_onoc__Syms::Vmesh_onoc__Syms(VerilatedContext* contextp, const char* namep
     , TOP{this, namep}
 {
         // Check resources
-        Verilated::stackCheck(3734);
+        Verilated::stackCheck(6614);
     // Configure time unit / time precision
     _vm_contextp__->timeunit(-12);
     _vm_contextp__->timeprecision(-12);

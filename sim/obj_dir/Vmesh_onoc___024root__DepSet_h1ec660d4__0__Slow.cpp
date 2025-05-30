@@ -146,16 +146,20 @@ VL_ATTR_COLD void Vmesh_onoc___024root___stl_sequent__TOP__0(Vmesh_onoc___024roo
            | (1U & (IData)(vlSelfRef.mesh_onoc__DOT____Vcellout__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__request_to_send)));
     vlSelfRef.mesh_onoc__DOT____Vcellout__wg_inst__BRA__0__KET____DOT__wg__packet_done 
         = ((vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__0__KET____DOT__wg__DOT__valid_left
-            [2U] << 1U) | vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__0__KET____DOT__wg__DOT__valid_right
-           [2U]);
+            [0U] << 1U) | vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__0__KET____DOT__wg__DOT__valid_right
+           [0U]);
     vlSelfRef.mesh_onoc__DOT____Vcellout__wg_inst__BRA__1__KET____DOT__wg__packet_done 
         = ((vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__1__KET____DOT__wg__DOT__valid_left
-            [2U] << 1U) | vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__1__KET____DOT__wg__DOT__valid_right
-           [2U]);
+            [0U] << 1U) | vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__1__KET____DOT__wg__DOT__valid_right
+           [0U]);
     vlSelfRef.mesh_onoc__DOT____Vcellout__wg_inst__BRA__2__KET____DOT__wg__packet_done 
         = ((vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__2__KET____DOT__wg__DOT__valid_left
-            [2U] << 1U) | vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__2__KET____DOT__wg__DOT__valid_right
-           [2U]);
+            [0U] << 1U) | vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__2__KET____DOT__wg__DOT__valid_right
+           [0U]);
+    vlSelfRef.mesh_onoc__DOT____Vcellout__wg_inst__BRA__3__KET____DOT__wg__packet_done 
+        = ((vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__3__KET____DOT__wg__DOT__valid_left
+            [0U] << 1U) | vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__3__KET____DOT__wg__DOT__valid_right
+           [0U]);
     vlSelfRef.mesh_onoc__DOT__router_request_to_send[0U] 
         = vlSelfRef.mesh_onoc__DOT____Vcellout__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__request_to_send;
     vlSelfRef.mesh_onoc__DOT__router_request_to_send[1U] 
@@ -165,13 +169,13 @@ VL_ATTR_COLD void Vmesh_onoc___024root___stl_sequent__TOP__0(Vmesh_onoc___024roo
     vlSelfRef.mesh_onoc__DOT__router_request_to_send[3U] 
         = vlSelfRef.mesh_onoc__DOT____Vcellout__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__request_to_send;
     vlSelfRef.mesh_onoc__DOT__router_ready_for_ip[0U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_local));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_local));
     vlSelfRef.mesh_onoc__DOT__router_ready_for_ip[1U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_local));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_local));
     vlSelfRef.mesh_onoc__DOT__router_ready_for_ip[2U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_local));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_local));
     vlSelfRef.mesh_onoc__DOT__router_ready_for_ip[3U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_local));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_local));
     vlSelfRef.mesh_onoc__DOT__waveguide_valid_to_photodetector[1U][3U] 
         = vlSelfRef.mesh_onoc__DOT__wg_inst__BRA__0__KET____DOT__wg__DOT__valid_right
         [3U];
@@ -961,37 +965,37 @@ VL_ATTR_COLD void Vmesh_onoc___024root___stl_sequent__TOP__0(Vmesh_onoc___024roo
         = vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__3__KET____DOT__u_pd__DOT__buffer
         [1U][3U];
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[0U][3U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[0U][2U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[0U][1U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[0U][0U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[1U][3U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[1U][2U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[1U][1U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[1U][0U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[2U][3U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[2U][2U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[2U][1U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[2U][0U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[3U][3U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[3U][2U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[3U][1U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south));
     vlSelfRef.mesh_onoc__DOT__router_ready_to_receive[3U][0U] 
-        = (2U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north));
+        = (4U > (IData)(vlSelfRef.mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north));
     vlSelfRef.mesh_onoc__DOT____Vcellinp__wg_inst__BRA__0__KET____DOT__fp_arb__freeze_all_grants 
         = ((2U & ((~ vlSelfRef.mesh_onoc__DOT__router_ready_to_receive
                    [0U][2U]) << 1U)) | (1U & (~ vlSelfRef.mesh_onoc__DOT__router_ready_to_receive
@@ -1191,6 +1195,7 @@ VL_ATTR_COLD void Vmesh_onoc___024root___ctor_var_reset(Vmesh_onoc___024root* vl
     vlSelf->mesh_onoc__DOT____Vcellout__wg_inst__BRA__2__KET____DOT__wg__packet_done = VL_RAND_RESET_I(2);
     vlSelf->mesh_onoc__DOT____Vcellinp__wg_inst__BRA__2__KET____DOT__fp_arb__freeze_all_grants = VL_RAND_RESET_I(2);
     vlSelf->mesh_onoc__DOT____Vcellinp__wg_inst__BRA__2__KET____DOT__fp_arb__request = VL_RAND_RESET_I(2);
+    vlSelf->mesh_onoc__DOT____Vcellout__wg_inst__BRA__3__KET____DOT__wg__packet_done = VL_RAND_RESET_I(2);
     vlSelf->mesh_onoc__DOT____Vcellinp__wg_inst__BRA__3__KET____DOT__fp_arb__freeze_all_grants = VL_RAND_RESET_I(2);
     vlSelf->mesh_onoc__DOT____Vcellinp__wg_inst__BRA__3__KET____DOT__fp_arb__request = VL_RAND_RESET_I(2);
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__ip_inst__DOT__payload = VL_RAND_RESET_I(32);
@@ -1198,43 +1203,62 @@ VL_ATTR_COLD void Vmesh_onoc___024root___ctor_var_reset(Vmesh_onoc___024root* vl
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__ip_inst__DOT__cycle_counter = VL_RAND_RESET_I(32);
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__ip_inst__DOT__destination = VL_RAND_RESET_I(16);
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__ip_inst__DOT__unnamedblk1__DOT__send_now = VL_RAND_RESET_I(1);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local[__Vi0]);
     }
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_local = VL_RAND_RESET_I(7);
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_local = VL_RAND_RESET_I(7);
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_local = VL_RAND_RESET_I(7);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_north[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_north = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_north = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_south[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_south = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_south = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_east = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_east = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_west = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(2);
-    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__current_packet);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__current_valid = VL_RAND_RESET_I(1);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__route_dir = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk1__DOT__dest_x = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk1__DOT__dest_y = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk2__DOT__dest_x = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk2__DOT__dest_y = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_west = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(3);
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk1__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk1__DOT__unnamedblk2__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk3__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk3__DOT__unnamedblk4__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk5__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk5__DOT__unnamedblk6__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk7__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk7__DOT__unnamedblk8__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk9__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk9__DOT__unnamedblk10__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk11__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk13__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk14__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk15__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk17__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk17__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk18__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk18__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk19__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk19__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk20__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk20__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk21__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk21__DOT__d = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk22__DOT__dir = 0;
     for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__0__KET____DOT__u_mod__DOT__buffer[__Vi0]);
     }
@@ -1288,43 +1312,62 @@ VL_ATTR_COLD void Vmesh_onoc___024root___ctor_var_reset(Vmesh_onoc___024root* vl
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__ip_inst__DOT__cycle_counter = VL_RAND_RESET_I(32);
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__ip_inst__DOT__destination = VL_RAND_RESET_I(16);
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__ip_inst__DOT__unnamedblk1__DOT__send_now = VL_RAND_RESET_I(1);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local[__Vi0]);
     }
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_local = VL_RAND_RESET_I(7);
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_local = VL_RAND_RESET_I(7);
     vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_local = VL_RAND_RESET_I(7);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_north = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_north = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_south = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_south = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_east = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_east = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_west = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(2);
-    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__current_packet);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__current_valid = VL_RAND_RESET_I(1);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__route_dir = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__dest_x = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__dest_y = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk2__DOT__dest_x = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk2__DOT__dest_y = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_west = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(3);
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__unnamedblk2__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk3__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk3__DOT__unnamedblk4__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk5__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk5__DOT__unnamedblk6__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk7__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk7__DOT__unnamedblk8__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk9__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk9__DOT__unnamedblk10__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk11__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk12__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk13__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk14__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk15__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk17__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk17__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk18__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk18__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk19__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk19__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk20__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk20__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk21__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk21__DOT__d = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk22__DOT__dir = 0;
     for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__0__KET____DOT__u_mod__DOT__buffer[__Vi0]);
     }
@@ -1378,43 +1421,62 @@ VL_ATTR_COLD void Vmesh_onoc___024root___ctor_var_reset(Vmesh_onoc___024root* vl
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__ip_inst__DOT__cycle_counter = VL_RAND_RESET_I(32);
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__ip_inst__DOT__destination = VL_RAND_RESET_I(16);
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__ip_inst__DOT__unnamedblk1__DOT__send_now = VL_RAND_RESET_I(1);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local[__Vi0]);
     }
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_local = VL_RAND_RESET_I(7);
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_local = VL_RAND_RESET_I(7);
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_local = VL_RAND_RESET_I(7);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_north[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_north = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_north = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_south[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_south = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_south = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_east = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_east = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_west = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(2);
-    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__current_packet);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__current_valid = VL_RAND_RESET_I(1);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__route_dir = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk1__DOT__dest_x = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk1__DOT__dest_y = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk2__DOT__dest_x = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk2__DOT__dest_y = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_west = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(3);
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk1__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk1__DOT__unnamedblk2__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk3__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk3__DOT__unnamedblk4__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk5__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk5__DOT__unnamedblk6__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk7__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk7__DOT__unnamedblk8__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk9__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk9__DOT__unnamedblk10__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk11__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk13__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk14__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk15__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk17__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk17__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk18__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk18__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk19__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk19__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk20__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk20__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk21__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk21__DOT__d = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk22__DOT__dir = 0;
     for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__0__KET____DOT__u_mod__DOT__buffer[__Vi0]);
     }
@@ -1468,43 +1530,62 @@ VL_ATTR_COLD void Vmesh_onoc___024root___ctor_var_reset(Vmesh_onoc___024root* vl
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__ip_inst__DOT__cycle_counter = VL_RAND_RESET_I(32);
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__ip_inst__DOT__destination = VL_RAND_RESET_I(16);
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__ip_inst__DOT__unnamedblk1__DOT__send_now = VL_RAND_RESET_I(1);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local[__Vi0]);
     }
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_local = VL_RAND_RESET_I(7);
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_local = VL_RAND_RESET_I(7);
     vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_local = VL_RAND_RESET_I(7);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_north = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_north = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_south = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_south = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_east = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(2);
-    for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_east = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(3);
+    for (int __Vi0 = 0; __Vi0 < 4; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west[__Vi0]);
     }
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_west = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(2);
-    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__current_packet);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__current_valid = VL_RAND_RESET_I(1);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__route_dir = VL_RAND_RESET_I(2);
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__dest_x = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__dest_y = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk2__DOT__dest_x = 0;
-    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk2__DOT__dest_y = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_west = VL_RAND_RESET_I(3);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(3);
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__unnamedblk2__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk3__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk3__DOT__unnamedblk4__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk5__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk5__DOT__unnamedblk6__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk7__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk7__DOT__unnamedblk8__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk9__DOT__p);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk9__DOT__unnamedblk10__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk11__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk12__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk13__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk14__DOT__dir = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk15__DOT__dir = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk17__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk17__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk18__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk18__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk19__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk19__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk20__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk20__DOT__d = 0;
+    VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk21__DOT__pkt);
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk16__DOT__unnamedblk21__DOT__d = 0;
+    vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk22__DOT__dir = 0;
     for (int __Vi0 = 0; __Vi0 < 2; ++__Vi0) {
         VL_RAND_RESET_W(97, vlSelf->mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__0__KET____DOT__u_mod__DOT__buffer[__Vi0]);
     }
@@ -1614,92 +1695,104 @@ VL_ATTR_COLD void Vmesh_onoc___024root___ctor_var_reset(Vmesh_onoc___024root* vl
     vlSelf->mesh_onoc__DOT__wg_inst__BRA__3__KET____DOT__fp_arb__DOT__waiting_for_done = VL_RAND_RESET_I(1);
     vlSelf->mesh_onoc__DOT__wg_inst__BRA__3__KET____DOT__fp_arb__DOT__unnamedblk1__DOT__i = 0;
     vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_local = VL_RAND_RESET_I(7);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__current_valid = VL_RAND_RESET_I(1);
-    VL_RAND_RESET_W(97, vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__current_packet);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_local = VL_RAND_RESET_I(7);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(3);
     vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_local = VL_RAND_RESET_I(7);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__current_valid = VL_RAND_RESET_I(1);
-    VL_RAND_RESET_W(97, vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__current_packet);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_local = VL_RAND_RESET_I(7);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(3);
     vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_local = VL_RAND_RESET_I(7);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__current_valid = VL_RAND_RESET_I(1);
-    VL_RAND_RESET_W(97, vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__current_packet);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_local = VL_RAND_RESET_I(7);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(3);
     vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_local = VL_RAND_RESET_I(7);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(2);
-    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__current_valid = VL_RAND_RESET_I(1);
-    VL_RAND_RESET_W(97, vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__current_packet);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_local = VL_RAND_RESET_I(7);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_north = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_south = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_east = VL_RAND_RESET_I(3);
+    vlSelf->__Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_west = VL_RAND_RESET_I(3);
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_north__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_north__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_north__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_north__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_south__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_south__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_south__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_south__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_north__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_north__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_north__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_north__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_south__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_south__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_south__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_south__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0 = 0;
     VL_RAND_RESET_W(97, vlSelf->__VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0);
-    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0 = VL_RAND_RESET_I(1);
+    vlSelf->__VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0 = VL_RAND_RESET_I(2);
     vlSelf->__VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0 = 0;
     vlSelf->__Vtrigprevexpr___TOP__clk__0 = VL_RAND_RESET_I(1);
     vlSelf->__Vtrigprevexpr___TOP__rst__0 = VL_RAND_RESET_I(1);
