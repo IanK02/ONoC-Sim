@@ -139,19 +139,29 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_local;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_north;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_south;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_east;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_west;
         CData/*0:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__ip_inst__DOT__pkt_sent_last_cycle;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_local;
+    };
+    struct {
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_north;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_south;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_east;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_west;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_local;
-    };
-    struct {
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_north;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_local;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_north;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_south;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_east;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_west;
         CData/*0:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__ip_inst__DOT__pkt_sent_last_cycle;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_local;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__head_north;
@@ -163,6 +173,11 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_south;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_east;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__count_west;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_local;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_north;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_south;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_east;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__tail_west;
         CData/*0:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__ip_inst__DOT__pkt_sent_last_cycle;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_local;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__head_north;
@@ -174,6 +189,11 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_south;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_east;
         CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__count_west;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_local;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_north;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_south;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_east;
+        CData/*2:0*/ __Vdly__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__tail_west;
         CData/*1:0*/ __VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local__v0;
         CData/*0:0*/ __VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local__v0;
         CData/*1:0*/ __VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_north__v0;
@@ -192,6 +212,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         CData/*0:0*/ __VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0;
         CData/*1:0*/ __VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0;
         CData/*0:0*/ __VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0;
+    };
+    struct {
         CData/*1:0*/ __VdlyDim0__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0;
         CData/*0:0*/ __VdlySet__mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0;
         CData/*1:0*/ __VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_local__v0;
@@ -204,17 +226,10 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         CData/*0:0*/ __VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east__v0;
         CData/*1:0*/ __VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west__v0;
         CData/*0:0*/ __VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west__v0;
-        CData/*1:0*/ __VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local__v0;
         CData/*0:0*/ __VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local__v0;
-        CData/*1:0*/ __VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north__v0;
         CData/*0:0*/ __VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north__v0;
-        CData/*1:0*/ __VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0;
         CData/*0:0*/ __VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0;
-        CData/*1:0*/ __VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0;
         CData/*0:0*/ __VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0;
-    };
-    struct {
-        CData/*1:0*/ __VdlyDim0__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0;
         CData/*0:0*/ __VdlySet__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0;
         CData/*0:0*/ __VstlFirstIteration;
         CData/*0:0*/ __Vtrigprevexpr___TOP__clk__0;
@@ -263,6 +278,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         IData/*31:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk13__DOT__d;
         IData/*31:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk14__DOT__d;
         IData/*31:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk15__DOT__d;
+    };
+    struct {
         IData/*31:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk16__DOT__d;
         IData/*31:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk17__DOT__d;
         IData/*31:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk18__DOT__dir;
@@ -278,8 +295,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         IData/*31:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk15__DOT__d;
         IData/*31:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk16__DOT__d;
         IData/*31:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk17__DOT__d;
-    };
-    struct {
         IData/*31:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk18__DOT__dir;
         IData/*31:0*/ mesh_onoc__DOT__wg_inst__BRA__0__KET____DOT__fp_arb__DOT__hold_counter;
         IData/*31:0*/ mesh_onoc__DOT__wg_inst__BRA__0__KET____DOT__fp_arb__DOT__unnamedblk1__DOT__i;
@@ -329,6 +344,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk16__DOT__pkt;
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk17__DOT__pkt;
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__unnamedblk2__DOT__p;
+    };
+    struct {
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__unnamedblk4__DOT__p;
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__unnamedblk6__DOT__p;
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__unnamedblk1__DOT__unnamedblk8__DOT__p;
@@ -344,8 +361,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk1__DOT__unnamedblk8__DOT__p;
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk1__DOT__unnamedblk10__DOT__p;
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk13__DOT__pkt;
-    };
-    struct {
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk14__DOT__pkt;
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk15__DOT__pkt;
         VlWide<4>/*96:0*/ mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__unnamedblk12__DOT__unnamedblk16__DOT__pkt;
@@ -375,11 +390,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         VlWide<4>/*96:0*/ __VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_south__v0;
         VlWide<4>/*96:0*/ __VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_east__v0;
         VlWide<4>/*96:0*/ __VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__0__KET____DOT__um_router__DOT__fifo_west__v0;
-        VlWide<4>/*96:0*/ __VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local__v0;
-        VlWide<4>/*96:0*/ __VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_north__v0;
-        VlWide<4>/*96:0*/ __VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_south__v0;
-        VlWide<4>/*96:0*/ __VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_east__v0;
-        VlWide<4>/*96:0*/ __VdlyVal__mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_west__v0;
         VL_OUT8(ip_valid_to_router[4],0,0);
         VL_OUT8(router_valid_to_ip[4],3,0);
         VlUnpacked<VlUnpacked<VlWide<4>/*96:0*/, 4>, 4> mesh_onoc__DOT__modulator_to_waveguide;
@@ -400,6 +410,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         VlUnpacked<CData/*0:0*/, 2> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__0__KET____DOT__u_mod__DOT__valid_buf;
         VlUnpacked<VlWide<4>/*96:0*/, 2> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__0__KET____DOT__u_pd__DOT__buffer;
         VlUnpacked<CData/*0:0*/, 2> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__0__KET____DOT__u_pd__DOT__valid_buf;
+    };
+    struct {
         VlUnpacked<VlWide<4>/*96:0*/, 2> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__1__KET____DOT__u_mod__DOT__buffer;
         VlUnpacked<CData/*0:0*/, 2> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__1__KET____DOT__u_mod__DOT__valid_buf;
         VlUnpacked<VlWide<4>/*96:0*/, 2> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__1__KET____DOT__u_pd__DOT__buffer;
@@ -410,8 +422,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         VlUnpacked<CData/*0:0*/, 2> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__2__KET____DOT__u_pd__DOT__valid_buf;
         VlUnpacked<VlWide<4>/*96:0*/, 2> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__3__KET____DOT__u_mod__DOT__buffer;
         VlUnpacked<CData/*0:0*/, 2> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__3__KET____DOT__u_mod__DOT__valid_buf;
-    };
-    struct {
         VlUnpacked<VlWide<4>/*96:0*/, 2> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__3__KET____DOT__u_pd__DOT__buffer;
         VlUnpacked<CData/*0:0*/, 2> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__0__KET____DOT__photonics_per_dir__BRA__3__KET____DOT__u_pd__DOT__valid_buf;
         VlUnpacked<VlWide<4>/*96:0*/, 4> mesh_onoc__DOT__rows__BRA__0__KET____DOT__cols__BRA__1__KET____DOT__um_router__DOT__fifo_local;
@@ -466,6 +476,8 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         VlUnpacked<VlWide<4>/*96:0*/, 2> mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__0__KET____DOT__u_pd__DOT__buffer;
         VlUnpacked<CData/*0:0*/, 2> mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__0__KET____DOT__u_pd__DOT__valid_buf;
         VlUnpacked<VlWide<4>/*96:0*/, 2> mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__1__KET____DOT__u_mod__DOT__buffer;
+    };
+    struct {
         VlUnpacked<CData/*0:0*/, 2> mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__1__KET____DOT__u_mod__DOT__valid_buf;
         VlUnpacked<VlWide<4>/*96:0*/, 2> mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__1__KET____DOT__u_pd__DOT__buffer;
         VlUnpacked<CData/*0:0*/, 2> mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__1__KET____DOT__u_pd__DOT__valid_buf;
@@ -476,8 +488,6 @@ class alignas(VL_CACHE_LINE_BYTES) Vmesh_onoc___024root final : public Verilated
         VlUnpacked<VlWide<4>/*96:0*/, 2> mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__3__KET____DOT__u_mod__DOT__buffer;
         VlUnpacked<CData/*0:0*/, 2> mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__3__KET____DOT__u_mod__DOT__valid_buf;
         VlUnpacked<VlWide<4>/*96:0*/, 2> mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__3__KET____DOT__u_pd__DOT__buffer;
-    };
-    struct {
         VlUnpacked<CData/*0:0*/, 2> mesh_onoc__DOT__rows__BRA__1__KET____DOT__cols__BRA__1__KET____DOT__photonics_per_dir__BRA__3__KET____DOT__u_pd__DOT__valid_buf;
         VlUnpacked<VlWide<4>/*96:0*/, 4> mesh_onoc__DOT__wg_inst__BRA__0__KET____DOT__wg__DOT__buffer_left;
         VlUnpacked<CData/*0:0*/, 4> mesh_onoc__DOT__wg_inst__BRA__0__KET____DOT__wg__DOT__valid_left;

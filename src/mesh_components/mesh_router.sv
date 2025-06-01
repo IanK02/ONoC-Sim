@@ -53,22 +53,27 @@ module mesh_router #(
 );
 
     // FIFO buffers per direction
+    /* verilator lint_off UNUSEDSIGNAL */
     packet_t fifo_local [FIFO_DEPTH];
     logic [$clog2(FIFO_DEPTH):0] head_local, tail_local, count_local;
+    logic [$clog2(FIFO_DEPTH):0] next_head_local, next_tail_local, next_count_local;
 
     packet_t fifo_north [FIFO_DEPTH];
     logic [$clog2(FIFO_DEPTH):0] head_north, tail_north, count_north;
+    logic [$clog2(FIFO_DEPTH):0] next_head_north, next_tail_north, next_count_north;
 
     packet_t fifo_south [FIFO_DEPTH];
     logic [$clog2(FIFO_DEPTH):0] head_south, tail_south, count_south;
+    logic [$clog2(FIFO_DEPTH):0] next_head_south, next_tail_south, next_count_south;
 
     packet_t fifo_east [FIFO_DEPTH];
     logic [$clog2(FIFO_DEPTH):0] head_east, tail_east, count_east;
+    logic [$clog2(FIFO_DEPTH):0] next_head_east, next_tail_east, next_count_east;
 
     packet_t fifo_west [FIFO_DEPTH];
     logic [$clog2(FIFO_DEPTH):0] head_west, tail_west, count_west;
-
-
+    logic [$clog2(FIFO_DEPTH):0] next_head_west, next_tail_west, next_count_west;
+    /* verilator lint_on UNUSEDSIGNAL */
 
     typedef enum logic [2:0] {
         SRC_LOCAL = 3'd0,
@@ -78,11 +83,63 @@ module mesh_router #(
         SRC_WEST  = 3'd4
     } src_t;
 
-    //src_t current_src;
+    // Combinational update logic
+    always_comb begin
+        next_tail_local = tail_local;
+        next_head_local = head_local;
+        next_count_local = count_local;
+        next_tail_north = tail_north;
+        next_head_north = head_north;
+        next_count_north = count_north;
+        next_tail_south = tail_south;
+        next_head_south = head_south;
+        next_count_south = count_south;
+        next_tail_east  = tail_east;
+        next_head_east  = head_east;
+        next_count_east = count_east;
+        next_tail_west  = tail_west;
+        next_head_west  = head_west;
+        next_count_west = count_west;
 
-    // Accept inputs into FIFOs if space is available
+        if (rst) begin
+            next_tail_local = 0; next_head_local = 0; next_count_local = 0;
+            next_tail_north = 0; next_head_north = 0; next_count_north = 0;
+            next_tail_south = 0; next_head_south = 0; next_count_south = 0;
+            next_tail_east  = 0; next_head_east  = 0; next_count_east  = 0;
+            next_tail_west  = 0; next_head_west  = 0; next_count_west  = 0;
+        end else begin
+            //enqueue logic
+            if (valid_in_local && count_local < FIFO_DEPTH) begin
+                fifo_local[tail_local] = data_in_local;
+                next_tail_local = (tail_local + 1) % FIFO_DEPTH;
+                next_count_local = count_local + 1;
+            end
+            if (valid_in_north && count_north < FIFO_DEPTH) begin
+                fifo_north[tail_north] = data_in_north;
+                next_tail_north = (tail_north + 1) % FIFO_DEPTH;
+                next_count_north = count_north + 1;
+            end
+            if (valid_in_south && count_south < FIFO_DEPTH) begin
+                fifo_south[tail_south] = data_in_south;
+                next_tail_south = (tail_south + 1) % FIFO_DEPTH;
+                next_count_south = count_south + 1;
+            end
+            if (valid_in_east && count_east < FIFO_DEPTH) begin
+                fifo_east[tail_east] = data_in_east;
+                next_tail_east = (tail_east + 1) % FIFO_DEPTH;
+                next_count_east = count_east + 1;
+            end
+            if (valid_in_west && count_west < FIFO_DEPTH) begin
+                fifo_west[tail_west] = data_in_west;
+                next_tail_west = (tail_west + 1) % FIFO_DEPTH;
+                next_count_west = count_west + 1;
+            end
 
-    // get rid of packet
+            // Placeholder: add routing logic and dequeue control per direction as needed
+        end
+    end
+
+    /* DEQUEUE */
     always_ff @(posedge clk) begin
         if (rst) begin
             valid_out_local <= 4'b0000;
@@ -96,6 +153,16 @@ module mesh_router #(
             head_south      <= 0;
             head_east     <= 0;
             head_west    <= 0;
+            count_local <= 0;
+            count_north <= 0;
+            count_south <= 0;
+            count_east  <= 0;
+            count_west  <= 0;
+            tail_local  <= 0;
+            tail_north  <= 0;
+            tail_south  <= 0;
+            tail_east  <= 0;
+            tail_west  <= 0;
             //been_sent_out_per_dir <= 4'b0000;
         end else begin
             /* verilator lint_off WIDTHEXPAND */
@@ -111,7 +178,6 @@ module mesh_router #(
             // Local FIFO
             if (count_local > 0) begin
                 packet_t p = fifo_local[head_local];
-            // logic [$clog2(FIFO_DEPTH):0] next_head_local;
                 if (p.dst[15:8] == X && p.dst[7:0] == Y) begin
                     //this should NEVER HAPPEN
                     data_out_local[0] <= p;
@@ -124,7 +190,6 @@ module mesh_router #(
                     if (permission_granted_send[dir] && !been_sent_out_per_dir[dir]) begin
                         been_sent_out_per_dir[dir] = 1;
                         $display("Router %0d Dequeueing packet", ROUTER_ID);
-                        //if(valid_in_local && count_local < FIFO_DEPTH) $display("Local WR conflict");
                         send_packet_to_dir(p, dir);
                         head_local <= (head_local + 1) % FIFO_DEPTH;
                         count_local <= count_local - 1;
@@ -211,60 +276,40 @@ module mesh_router #(
                     end
                 end
             end
+
+            /* ENQUEUE */
+            if (valid_in_local && count_local < FIFO_DEPTH) begin
+                $display("Router %0d enqueueing %0d-%0d", ROUTER_ID, data_in_local.data[31:24], data_in_local.data[23:0]);
+                fifo_local[tail_local] <= data_in_local;
+                tail_local <= (tail_local + 1) % FIFO_DEPTH;
+                count_local <= count_local + 1;
+            end
+            if (valid_in_north && count_north < FIFO_DEPTH) begin
+                //$display("Router %0d Received packet from north", ROUTER_ID);
+                fifo_north[tail_north] <= data_in_north;
+                tail_north <= (tail_north + 1) % FIFO_DEPTH;
+                count_north <= count_north + 1;
+            end
+            if (valid_in_south && count_south < FIFO_DEPTH) begin
+                //$display("Router %0d Received packet from south", ROUTER_ID);
+                fifo_south[tail_south] <= data_in_south;
+                tail_south <= (tail_south + 1) % FIFO_DEPTH;
+                count_south <= count_south + 1;
+            end
+            if (valid_in_east && count_east < FIFO_DEPTH) begin
+                //$display("Router %0d Received packet from east", ROUTER_ID);
+                fifo_east[tail_east] <= data_in_east;
+                tail_east <= (tail_east + 1) % FIFO_DEPTH;
+                count_east <= count_east + 1;
+            end
+            if (valid_in_west && count_west < FIFO_DEPTH) begin
+                //$display("Router %0d Received packet from west", ROUTER_ID);
+                fifo_west[tail_west] <= data_in_west;
+                tail_west <= (tail_west + 1) % FIFO_DEPTH;
+                count_west <= count_west + 1;
+            end
         end
     end 
-
-always_ff @(posedge clk) begin
-    if(rst) begin
-        count_local <= 0;
-        count_north <= 0;
-        count_south <= 0;
-        count_east  <= 0;
-        count_west  <= 0;
-        tail_local  <= 0;
-        tail_north  <= 0;
-        tail_south  <= 0;
-        tail_east  <= 0;
-        tail_west  <= 0;
-    end else begin
-        //take in packet
-        /* verilator lint_off WIDTHEXPAND */
-        /* verilator lint_off WIDTHTRUNC */
-        if (valid_in_local && count_local < FIFO_DEPTH) begin
-            $display("Router %0d enqueueing %0d-%0d", ROUTER_ID, data_in_local.data[31:24], data_in_local.data[23:0]);
-            fifo_local[tail_local] <= data_in_local;
-            tail_local <= (tail_local + 1) % FIFO_DEPTH;
-            count_local <= count_local + 1;
-        end
-        if (valid_in_north && count_north < FIFO_DEPTH) begin
-            //$display("Router %0d Received packet from north", ROUTER_ID);
-            fifo_north[tail_north] <= data_in_north;
-            tail_north <= (tail_north + 1) % FIFO_DEPTH;
-            count_north <= count_north + 1;
-        end
-        if (valid_in_south && count_south < FIFO_DEPTH) begin
-            //$display("Router %0d Received packet from south", ROUTER_ID);
-            fifo_south[tail_south] <= data_in_south;
-            tail_south <= (tail_south + 1) % FIFO_DEPTH;
-            count_south <= count_south + 1;
-        end
-        if (valid_in_east && count_east < FIFO_DEPTH) begin
-            //$display("Router %0d Received packet from east", ROUTER_ID);
-            fifo_east[tail_east] <= data_in_east;
-            tail_east <= (tail_east + 1) % FIFO_DEPTH;
-            count_east <= count_east + 1;
-        end
-        if (valid_in_west && count_west < FIFO_DEPTH) begin
-            //$display("Router %0d Received packet from west", ROUTER_ID);
-            fifo_west[tail_west] <= data_in_west;
-            tail_west <= (tail_west + 1) % FIFO_DEPTH;
-            count_west <= count_west + 1;
-        end
-        /* verilator lint_on WIDTHEXPAND */
-        /* verilator lint_on WIDTHTRUNC */
-    end
-end
-
 
 //debug printing
 always_ff @(posedge clk) begin
