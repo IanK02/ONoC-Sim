@@ -2,7 +2,7 @@ import packet_pkg::packet_t;
 
 module ip_block #(
     parameter WIDTH = 32,
-    parameter NUM_ROUTERS = 2
+    parameter NUM_ROUTERS = 4
 ) (
     input  logic clk,
     input  logic rst,
@@ -17,9 +17,9 @@ module ip_block #(
 
     // Input from router
     /* verilator lint_off UNUSEDSIGNAL */
-    input  packet_t data_in,
+    input  packet_t [3:0] data_in,
     /* verilator lint_on UNUSEDSIGNAL */
-    input  logic             valid_in,
+    input  logic [3:0]          valid_in,
     input  logic [(WIDTH/2)-1:0] ip_id,
 
     // Packet generation control
@@ -53,7 +53,7 @@ module ip_block #(
         return encode_xy(rand_x, rand_y);
     endfunction
 
-    always_ff @(posedge clk or posedge rst) begin
+    always_ff @(posedge clk) begin
         if (rst) begin
             packet_out  <= 0;
             valid_out <= 0;
@@ -65,7 +65,7 @@ module ip_block #(
             send_now = 0;
 
             case (generation_scheme)
-                3'b000: send_now = ($urandom_range(0, 9) < 1); // Random
+                3'b000: send_now = ($urandom_range(0, 9) < 4); // Random
                 3'b001: send_now = (cycle_counter % 30 < 10);  // Bursty: 10 on, 20 off
                 3'b010: send_now = ($urandom % 100 < (50 + 50 * $sin(2.0 * 3.14 * cycle_counter / 50.0))); // Sinusoidal
                 3'b011: send_now = (cycle_counter % 5 == 0);    // Constant rate: every 5 cycles
@@ -78,13 +78,13 @@ module ip_block #(
             if (send_now && ready_in && !pkt_sent_last_cycle) begin
                 destination <= get_random_destination(ip_id);
                 valid_out <= 1;
-                packet_out.data <= (ip_id << 16) | payload;
+                packet_out.data <= {ip_id[7:0], cycle_counter[23:0]};
                 packet_out.src <= encode_xy(X,Y);
                 packet_out.dst <= destination;
                 packet_out.timestamp <= cycle_counter;
                 packet_out.valid <= 1'b1;
                 pkt_sent_last_cycle <= 1;
-                $display("IP %0d sending %d to dest %0d", ip_id, payload, destination);
+                $display("IP %0d sending %0d-%0d to %0d,%0d", ip_id, ip_id[7:0], cycle_counter[23:0], destination[15:8], destination[7:0]);
                 payload <= payload + 1;
             end else begin
                 valid_out <= 0;
@@ -96,9 +96,10 @@ module ip_block #(
     end
 
     always_ff @(posedge clk) begin
-        if (valid_in) begin
-            $display("IP block %0d received packet from IP %0d with ID %0d",
-                ip_id, data_in.data >> 16, data_in.data & 32'hFFFF);
+        for(int i = 0; i < 4; i++)begin
+            if (valid_in[i]) begin
+                $display("IP block %0d received packet %0d-%0d from %d,%d", ip_id, data_in[i].data[31:24],data_in[i].data[23:0], data_in[i].src[15:8], data_in[i].src[7:0]);
+            end
         end
     end
 

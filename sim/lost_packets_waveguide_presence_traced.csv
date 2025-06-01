@@ -1,0 +1,149 @@
+packet_id,seen_in_waveguide,last_cycle_seen,last_tag,last_line
+0-108,True,,Other,L->R  [0: :0-113] [1: :0-113] [2:V:0-113] [3: :0-108]
+0-110,False,,Never seen,
+0-164,False,,Never seen,
+0-184,False,,Never seen,
+0-193,True,,Other,"IP block 2 received packet 0-193 from   0,  0"
+0-232,False,,Never seen,
+0-234,False,,Never seen,
+0-238,False,,Never seen,
+0-242,False,,Never seen,
+0-246,False,,Never seen,
+0-304,False,,Never seen,
+0-323,False,,Never seen,
+0-338,False,,Never seen,
+0-350,False,,FIFO,Local FIFO c=2 h=3 t=3  : 0-350(d=2) 0-353(d=2) x x
+0-354,False,,Never seen,
+0-363,False,,Never seen,
+0-377,False,,Never seen,
+0-383,False,,Never seen,
+0-387,True,,FIFO,Local FIFO c=3 h=2 t=3  : 0-402(d=2) 0-387(d=1) 0-390(d=1) x
+0-399,False,,Never seen,
+0-465,False,,Never seen,
+0-474,False,,Never seen,
+0-480,False,,Never seen,
+0-482,False,,FIFO,Local FIFO c=3 h=3 t=1  : 0-487(d=1) 0-489(d=2) 0-482(d=1) x
+0-493,False,,Never seen,
+0-76,False,,FIFO,Local FIFO c=2 h=3 t=3  : 0-76(d=1) 0-82(d=1) x x
+0-82,False,,FIFO,Local FIFO c=3 h=3 t=0  : 0-90(d=2) 0-82(d=1) 0-86(d=2) x
+0-86,False,,FIFO,Local FIFO c=3 h=0 t=1  : 0-93(d=2) 0-86(d=2) 0-88(d=2) x
+0-88,False,,FIFO,Local FIFO c=3 h=1 t=2  : 0-96(d=2) 0-88(d=2) 0-90(d=2) x
+0-94,False,,Never seen,
+0-96,True,,FIFO,Local FIFO c=3 h=0 t=1  : 0-111(d=1) 0-96(d=2) 0-101(d=2) x
+1-137,False,,Other,Router 1 enqueueing 1-137
+1-140,False,,Other,Router 1 enqueueing 1-140
+1-142,False,,Never seen,
+1-146,False,,Never seen,
+1-157,False,,Never seen,
+1-159,False,,Never seen,
+1-16,True,,Other,"IP block 2 received packet 1-169 from   1,  0"
+1-18,True,,Router,"R->L  [0: :1-191] [1: :1-191] [2:V:1-191] [3: :1-183]  Connecting router 0,2 with router 1,3"
+1-22,True,,Router,"R->L  [0: :1-235] [1: :1-235] [2:V:1-235] [3: :1-221]  Connecting router 0,2 with router 1,3"
+1-227,False,,Never seen,
+1-233,False,,Never seen,
+1-235,True,,Router,"R->L  [0: :1-241] [1: :1-241] [2:V:1-241] [3: :1-235]  Connecting router 0,2 with router 1,3"
+1-237,True,,Other,L->R  [0: :1-239] [1: :1-239] [2:V:1-239] [3: :1-237]
+1-239,True,,Other,L->R  [0: :0-227] [1: :0-227] [2:V:0-227] [3: :1-239]
+1-248,False,,Never seen,
+1-26,True,,Other,"IP block 2 received packet 1-269 from   1,  0"
+1-268,False,,Never seen,
+1-289,False,,Never seen,
+1-313,False,,Never seen,
+1-315,False,,Never seen,
+1-32,True,,Other,L->R  [0: :0-374] [1: :0-374] [2:V:0-374] [3: :1-326]
+1-321,False,,Never seen,
+1-338,False,,Never seen,
+1-340,False,,Never seen,
+1-347,False,,Never seen,
+1-368,False,,Never seen,
+1-392,False,,Never seen,
+1-426,True,,Other,"IP block 0 received packet 1-426 from   1,  0"
+1-439,False,,Never seen,
+1-447,False,,Never seen,
+1-455,False,,Never seen,
+1-457,False,,Never seen,
+1-467,False,,Never seen,
+1-471,True,,Router,"R->L  [0: :1-484] [1: :1-484] [2:V:1-484] [3: :1-471]  Connecting router 0,2 with router 1,3"
+1-474,False,,Never seen,
+1-482,True,,Other,L->R  [0: :0-425] [1:V:0-425] [2: :1-482] [3: :1-482]
+1-484,True,,Waveguide,"R->L  [0: :1-484] [1: :1-484] [2:V:1-484] [3: :1-471]  Connecting router 0,2 with router 1,3"
+1-487,False,,Other,"Mod 1,3  V:1 ID:1-487Mod 1,3  V:0 ID:1-484"
+1-490,False,,Never seen,
+1-492,False,,Never seen,
+1-499,False,,Other,"IP 1 sending 1-499 to 0,0"
+1-82,False,,FIFO,Local FIFO c=3 h=0 t=0  : 1-82(d=3) 1-84(d=3) 1-86(d=3) x
+1-84,True,,Other,"IP block 0 received packet 1-84 from   1,  0"
+1-86,True,,Router,"R->L  [0: :1-119] [1: :1-119] [2:V:1-119] [3: :1-86]  Connecting router 0,2 with router 1,3"
+1-90,False,,Never seen,
+1-95,False,,Never seen,
+2-135,False,,Never seen,
+2-14,True,,FIFO,Local FIFO c=2 h=0 t=0  : 2-148(d=2) 2-150(d=0) x x
+2-167,False,,Never seen,
+2-174,False,,Never seen,
+2-177,False,,Never seen,
+2-180,False,,Never seen,
+2-19,True,,Router,"R->L  [0: :2-207] [1: :2-207] [2:V:2-207] [3: :2-197]  Connecting router 0,1 with router 2,0"
+2-192,False,,Never seen,
+2-21,True,,Other,L->R  [0: :2-227] [1: :2-227] [2:V:2-227] [3: :2-213]
+2-23,True,,Other,"IP block 1 received packet 2-231 from   0,  1"
+2-245,False,,Never seen,
+2-248,False,,Never seen,
+2-254,False,,Never seen,
+2-258,False,,Never seen,
+2-26,True,,Router,"R->L  [0: :3-224] [1: :3-224] [2:V:3-224] [3: :2-261]  Connecting router 0,1 with router 2,0"
+2-269,False,,Never seen,
+2-297,False,,Never seen,
+2-300,False,,Never seen,
+2-304,False,,Never seen,
+2-321,False,,Never seen,
+2-324,False,,Never seen,
+2-326,False,,Never seen,
+2-354,False,,Never seen,
+2-434,False,,Never seen,
+2-454,False,,Never seen,
+2-463,False,,Never seen,
+2-469,False,,Never seen,
+2-471,False,,Never seen,
+2-7,True,,Router,"R->L  [0: :3-106] [1: :3-106] [2:V:3-106] [3: :2-74]  Connecting router 1,1 with router 3,0"
+2-82,True,,Router,"R->L  [0: :3-73] [1: :3-73] [2:V:3-73] [3: :2-82]  Connecting router 0,1 with router 2,0"
+3-119,True,,Other,"IP block 2 received packet 3-119 from   1,  1"
+3-122,False,,Never seen,
+3-125,True,,Other,"IP block 0 received packet 3-125 from   1,  1"
+3-127,False,,FIFO,Local FIFO c=1 h=2 t=2  : 3-127(d=3) x x x
+3-131,False,,Other,Router 3 enqueueing 3-131
+3-180,False,,Never seen,
+3-187,False,,Never seen,
+3-189,False,,Never seen,
+3-193,False,,Never seen,
+3-197,False,,Never seen,
+3-227,False,,Never seen,
+3-229,True,,Router,"R->L  [0: :3-245] [1: :3-245] [2:V:3-245] [3: :3-229]  Connecting router 1,1 with router 3,0"
+3-235,False,,FIFO,Local FIFO c=1 h=3 t=3  : 3-235(d=3) x x x
+3-238,False,,Never seen,
+3-271,True,,Other,"IP block 2 received packet 3-271 from   1,  1"
+3-275,False,,Never seen,
+3-278,False,,Never seen,
+3-285,False,,Never seen,
+3-340,False,,Never seen,
+3-356,True,,Other,"IP block 2 received packet 3-356 from   1,  1"
+3-359,False,,Never seen,
+3-361,False,,Never seen,
+3-366,False,,Never seen,
+3-397,True,,Other,"IP block 2 received packet 3-397 from   1,  1"
+3-399,False,,Never seen,
+3-419,False,,Never seen,
+3-421,False,,Never seen,
+3-425,False,,Never seen,
+3-433,False,,Never seen,
+3-457,False,,Never seen,
+3-460,False,,Never seen,
+3-467,False,,Never seen,
+3-469,False,,Never seen,
+3-473,False,,Never seen,
+3-478,False,,Never seen,
+3-484,False,,Never seen,
+3-486,False,,Never seen,
+3-488,False,,Never seen,
+3-497,False,,Never seen,
+3-79,True,,Other,"IP block 1 received packet 3-79 from   1,  1"
+3-86,True,,Other,"IP block 1 received packet 3-86 from   1,  1"

@@ -6,13 +6,16 @@ module modulator #(parameter DELAY = 2) (
     input  logic             in_valid,
     output packet_t          out_data,
     output logic             out_valid,
-    input  integer           mod_id   
+    /* verilator lint_off UNUSEDSIGNAL */
+    input  integer           mod_id,
+    input  integer           direction   
+    /* verilator lint_on UNUSEDSIGNAL */
 );
     packet_t         buffer    [0:DELAY-1];
     logic            valid_buf [0:DELAY-1];
     integer i;
 
-    always_ff @(posedge clk or posedge rst) begin
+    always_ff @(posedge clk) begin
         if (rst) begin
             for (i = 0; i < DELAY; i++) begin
                 buffer[i] <= 0;
@@ -30,10 +33,11 @@ module modulator #(parameter DELAY = 2) (
 
     assign out_data = buffer[DELAY-1];
     assign out_valid = valid_buf[DELAY-1];
-always_ff @(posedge clk) begin
-    if (valid_buf[DELAY-1]) begin
-        $display("Modulator %0d forwarding packet ID %0d", mod_id, out_data.timestamp);
+    always_ff @(posedge clk) begin
+            for (i = 0; i < DELAY; i++) begin
+                $write("Mod %0d,%0d  V:%0b ID:%0d-%0d", mod_id, direction, valid_buf[i], buffer[i].data[31:24], buffer[i].data[23:0]);
+            end
+            $display("");
     end
-end
 
 endmodule

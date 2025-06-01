@@ -27,14 +27,18 @@ else
     TRACE_FLAGS =
 endif
 
+# Default target
 all: build
 
 build:
 	verilator -Wall $(TRACE_FLAGS) --cc $(SV) $(INCLUDE_DIRS) --exe $(CPP) --top-module $(TOP)
 	make -C obj_dir -f V$(TOP).mk V$(TOP)
 
+# === Updated run target to call Python scripts ===
 run: build
 	./obj_dir/V$(TOP) > mesh_debug.txt
+	python3 mesh_analysis/lost_packets.py
+	python3 mesh_analysis/analyze_lost_packets.py
 
 clean:
 	rm -rf obj_dir *.vcd $(TOP) results.csv latencies.csv verilator_output.txt mesh_debug.txt signals.csv router_plots

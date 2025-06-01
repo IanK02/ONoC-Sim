@@ -45,7 +45,7 @@ module router #(
     assign ip_data_out  = pd_data_in;
     assign ip_valid_out = pd_valid_in;
 
-    // IP input ready if buffer and waveguide are free
+    // IP input ready if buffer is free
     assign ip_ready_out = !pending_send_packet;
 
     // Request to send is asserted if we have something in the buffer
@@ -62,17 +62,6 @@ module router #(
             // Receive data from IP if no packet in buffer
             if (ip_valid_in && !pending_send_packet) begin
                 $display("Router %0d buffered packet ID %0d from IP", router_id, ip_data_in.data & 32'hFFFF);
-                //$display("Router %0d buffered packet from IP %0d with ID %0d",
-         //router_id, pd_data_in.data >> 16, pd_data_in.data & 32'hFFFF);
-                //outgoing_pkt_buffer.src       <= router_id[8:0];
-                //outgoing_pkt_buffer.dst       <= $urandom_range(0, NUM_ROUTERS-1)[8:0];
-                //outgoing_pkt_buffer.data      <= ip_data_in;
-                //outgoing_pkt_buffer.timestamp <= current_cycle;
-                //outgoing_pkt_buffer.valid     <= 1'b1;
-                /* verilator lint_off WIDTHTRUNC */
-                //outgoing_pkt_buffer.id <= (ip_data_in & 32'hFFFF);
-                /* verilator lint_on WIDTHTRUNC */
-                //buffer               <= ip_data_in;
                 outgoing_pkt_buffer <= ip_data_in;
                 pending_send_packet  <= 1;
 

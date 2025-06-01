@@ -11,6 +11,8 @@ Vmesh_onoc::Vmesh_onoc(VerilatedContext* _vcontextp__, const char* _vcname__)
     , vlSymsp{new Vmesh_onoc__Syms(contextp(), _vcname__, this)}
     , clk{vlSymsp->TOP.clk}
     , rst{vlSymsp->TOP.rst}
+    , ip_valid_to_router{vlSymsp->TOP.ip_valid_to_router}
+    , router_valid_to_ip{vlSymsp->TOP.router_valid_to_ip}
     , rootp{&(vlSymsp->TOP)}
 {
     // Register model with the context
